@@ -1,12 +1,12 @@
 module.exports = {
   Admins: ["UserID", "UserID"], //Admins of the bot
   ExpressServer: true,//If you wanted to make the website run or not
-  DefaultPrefix: process.env.Prefix || ">", //Default prefix, Server Admins can change the prefix
+  DefaultPrefix: process.env.Prefix || "-", //Default prefix, Server Admins can change the prefix
   Port: 3000, //Which port website gonna be hosted
   SupportServer: "https://discord.gg/sbySMS7m3v", //Support Server Link
-  Token: process.env.Token || "", //Discord Bot Token
-  ClientID: process.env.Discord_ClientID || "", //Discord Client ID
-  ClientSecret: process.env.Discord_ClientSecret || "", //Discord Client Secret
+  Token: process.env.Token || "ODg3NzI5Mzg2ODUyMzQ3OTg0.YUIYaw.IxKZjSLwXxed8RDEBP4tMU4OGb8", //Discord Bot Token
+  ClientID: process.env.Discord_ClientID || "887729386852347984", //Discord Client ID
+  ClientSecret: process.env.Discord_ClientSecret || "fPKTpd-OuqZWJct0nFmWA__ubvHtEyDM", //Discord Client Secret
   Scopes: ["identify", "guilds", "applications.commands"], //Discord OAuth2 Scopes
   CallbackURL: "/api/callback", //Discord OAuth2 Callback URL
   "24/7": false, //If you want the bot to be stay in the vc 24/7
@@ -19,16 +19,16 @@ module.exports = {
   //Lavalink
    Lavalink: {
     id: "Main",
-    host: "(host name or IP)",
-    port: (port),
-    pass: "(password)", 
+    host: "lava.link",
+    port: 80 ,
+    pass: "1", 
     secure: false, // Set this to true if you're self-hosting lavalink on replit.
   },
 
 
   //Please go to https://developer.spotify.com/dashboard/
   Spotify: {
-    ClientID: process.env.Spotify_ClientID || "", //Spotify Client ID
-    ClientSecret: process.env.Spotify_ClientSecret || "", //Spotify Client Secret
+    ClientID: process.env.Spotify_ClientID || "e1317eac802c4aa1b8041f8041829ddd", //Spotify Client ID
+    ClientSecret: process.env.Spotify_ClientSecret || "d15664b7dc2c4ea5a447b017b23254b6", //Spotify Client Secret
   },
 };
